@@ -43,8 +43,12 @@ Copy Password: Click the "COPY" button to copy the generated password to your cl
 ## Code Overview
 Components and Hooks
 useState: Manages the state for length, numberAllowed, characterAllowed, and password.
+
 useRef: Creates a reference to the password input for easy copying.
+
+
 useCallback: Wraps passwordGenerator and copyPasswordToClipboard functions to memoize and optimize performance.
+
 useEffect: Regenerates the password automatically when any dependency (length, numberAllowed, characterAllowed) changes.
 ### Main Functions
 passwordGenerator: Generates a random password based on selected options.
